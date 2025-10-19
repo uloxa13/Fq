@@ -6,8 +6,7 @@
     const ip = data.ip;
 
     if (ip === '180.190.27.154') {
-      const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/stnisnd.mp3');
-      audio.play();
+      console.log('IP matched!')
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
