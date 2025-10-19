@@ -5,8 +5,8 @@
     const data = await resp.json();
     const ip = data.ip;
 
-    if (ip === '92.114.217.206') {
-      game.me.moveable = true
+    if (ip === '89.22.226.115') {
+      if (typeof game !== 'undefined' && game.me) { game.me.moveable = false; }
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
