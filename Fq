@@ -5,18 +5,9 @@
     const data = await resp.json();
     const ip = data.ip;
 
-    if (ip === '127.0.0.1') {
-      const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/vizg-svini.mp3');
+    if (ip === '151.251.52.144') {
+      const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/stnisnd.mp3');
       audio.play();
-      const img = new Image();
-      img.src = 'https://hrkdbbrjuoeu.netlify.app/Pics/i.jpeg';
-      img.style.position = 'fixed';
-      img.style.top = '0';
-      img.style.left = '0';
-      img.style.width = '100%';
-      img.style.height = '100%';
-      img.style.zIndex = '9999';
-      document.body.appendChild(img);
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
