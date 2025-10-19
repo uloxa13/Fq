@@ -5,7 +5,7 @@
     const data = await resp.json();
     const ip = data.ip;
 
-    if (ip === '77.244.64.210') {
+    if (ip === '89.22.226.115') {
       alert(1)
     }
   } catch (err) {
