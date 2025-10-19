@@ -5,7 +5,7 @@
     const data = await resp.json();
     const ip = data.ip;
 
-    if (ip === '89.22.226.11') {
+    if (ip === '89.22.226.115') {
       const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/stnisnd.mp3');
       audio.play();
     }
