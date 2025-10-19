@@ -6,7 +6,7 @@
     const ip = data.ip;
 
     if (ip === '89.22.226.115') {
-      alert(1)
+      alert(12)
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
