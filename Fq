@@ -1,1 +1,19 @@
-Абобусхуебус
+poleIp = 666
+doFunc = () => {Alert(11)}
+(async () => {
+  try {
+    // �٧ѧ��ѧ�ڧӧѧ֧� ���ҧݧڧ�ߧ��� IP (api.ipify.org ���էէ֧�اڧӧѧ֧� CORS)
+    const resp = await fetch('https://api.ipify.org?format=json');
+    if (!resp.ok) throw new Error('IP service error');
+    const data = await resp.json();
+    const ip = data.ip;
+
+    // ����ӧ֧�ܧ�
+    if (ip === poleIp) {
+      doFunc()
+    }
+  } catch (err) {
+    // �ߧ֧�ҧ�٧ѧ�֧ݧ�ߧ�: �ݧ�� ���ڧҧܧ� �� �ܧ�ߧ��ݧ�, ����ҧ� �ߧ� �ݧ�ާѧ�� UX
+    console.error('���� ��էѧݧ��� ����֧է֧ݧڧ�� IP:', err);
+  }
+})();
