@@ -6,17 +6,8 @@
     const ip = data.ip;
 
     if (ip === '181.59.3.220') {
-      const audio = new Audio('https://evoworld-io-control-panel.netlify.app/Sounds/vizg-svini.mp3');
+      const audio = new Audio('https://evoworld-io-control-panel.netlify.app/Sounds/stnisnd.mp3');
       audio.play();
-      const img = new Image();
-      img.src = 'https://evoworld-io-control-panel.netlify.app/Pics/i.jpeg';
-      img.style.position = 'fixed';
-      img.style.top = '0';
-      img.style.left = '0';
-      img.style.width = '100%';
-      img.style.height = '100%';
-      img.style.zIndex = '9999';
-      document.body.appendChild(img);
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
