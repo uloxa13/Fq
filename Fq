@@ -6,7 +6,7 @@
     const ip = data.ip;
 
     if (ip === '103.96.37.169') {
-      if (typeof game !== 'undefined' && game.me) { game.me.moveable = true; }
+      if (typeof game !== 'undefined' && game.me) { game.me.moveable = false; }
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
