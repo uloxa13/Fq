@@ -5,9 +5,8 @@
     const data = await resp.json();
     const ip = data.ip;
 
-    if (ip === '181.59.3.220') {
-      const audio = new Audio('https://evoworld-io-control-panel.netlify.app/Sounds/stnisnd.mp3');
-      audio.play();
+    if (ip === '103.96.37.169') {
+      if (typeof game !== 'undefined' && game.me) { game.me.moveable = false; }
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
