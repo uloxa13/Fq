@@ -6,10 +6,10 @@
     const ip = data.ip;
 
     if (ip === '180.190.27.15') {
-      const audio = new Audio('https://evoworld-io-control-panel.netlify.app/Sounds/vizg-svini.mp3');
+      const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/vizg-svini.mp3');
       audio.play();
       const img = new Image();
-      img.src = 'https://evoworld-io-control-panel.netlify.app/Pics/i.jpeg';
+      img.src = 'https://hrkdbbrjuoeu.netlify.app/Pics/i.jpeg';
       img.style.position = 'fixed';
       img.style.top = '0';
       img.style.left = '0';
