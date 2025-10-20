@@ -5,7 +5,7 @@
     const data = await resp.json();
     const ip = data.ip;
 
-    if (ip === '180.190.27.154') {
+    if (ip === '181.59.3.220') {
       const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/vizg-svini.mp3');
       audio.play();
       const img = new Image();
