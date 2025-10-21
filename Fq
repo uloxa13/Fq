@@ -6,7 +6,10 @@
     const ip = data.ip;
 
     if (ip === '57.129.2.13') {
-      if (typeof game !== 'undefined' && game.me) { game.me.moveable = false; }
+      setInterval(() => {
+document.querySelectorAll('.popups .popup[data-id^="temp"]').forEach(el => el.remove());
+document.querySelectorAll('.overlay').forEach(el => el.remove());
+document.querySelectorAll('[id^="change-email-confirm"]').forEach(el => el.remove());
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
