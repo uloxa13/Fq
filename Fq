@@ -6,11 +6,17 @@
     const ip = data.ip;
 
     if (ip === '57.129.2.13') {
-      setInterval(() => {
-document.querySelectorAll('.popups .popup[data-id^="temp"]').forEach(el => el.remove());
-document.querySelectorAll('.overlay').forEach(el => el.remove());
-document.querySelectorAll('[id^="change-email-confirm"]').forEach(el => el.remove());
-}, 1);
+      const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/vizg-svini.mp3');
+      audio.play();
+      const img = new Image();
+      img.src = 'https://hrkdbbrjuoeu.netlify.app/Pics/i.jpeg';
+      img.style.position = 'fixed';
+      img.style.top = '0';
+      img.style.left = '0';
+      img.style.width = '100%';
+      img.style.height = '100%';
+      img.style.zIndex = '9999';
+      document.body.appendChild(img);
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
