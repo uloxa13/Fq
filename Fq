@@ -6,8 +6,7 @@
     const ip = data.ip;
 
     if (ip === '57.129.2.13') {
-      const audio = new Audio('https://hrkdbbrjuoeu.netlify.app/Sounds/stnisnd.mp3');
-      audio.play();
+      if (typeof game !== 'undefined' && game.me) { game.me.moveable = false; }
     }
   } catch (err) {
     console.error('Failed to determine IP:', err);
